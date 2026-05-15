@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scott R. Mayer — Independent Inventor</title>
+  <meta name="description" content="Independent inventor working in interventional cardiology and intracoronary drug delivery. U.S. patent filings on record with the USPTO. Open to licensing and partnership inquiries." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Scott R. Mayer — Independent Inventor" />
+  <meta property="og:description" content="Medical technology · Interventional cardiology · U.S. patent filings on record with the USPTO." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://scottrmayer.com" />
+
+  <!-- Favicon: simple monogram SVG inline -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23F4EFE6'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-weight='400' fill='%236B2531'%3ESM%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts: Fraunces for display, Newsreader for body. Both via Google Fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #F4EFE6;
+      --ink: #1E1B19;
+      --ink-muted: #7A7068;
+      --accent: #6B2531;
+      --rule: #D7CDB9;
+      --serif-display: 'Fraunces', 'Hoefler Text', Georgia, serif;
+      --serif-body: 'Newsreader', 'Hoefler Text', Georgia, serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--serif-body);
+      font-size: 18px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-variant-ligatures: common-ligatures contextual;
+      font-feature-settings: 'kern' 1, 'liga' 1, 'onum' 1;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 1.5rem;
+      position: relative;
+      /* Subtle parchment grain */
+      background-image:
+        radial-gradient(circle at 12% 18%, rgba(107,37,49,0.025) 0, transparent 40%),
+        radial-gradient(circle at 88% 82%, rgba(30,27,25,0.03) 0, transparent 38%);
+    }
+
+    /* Faint paper-edge vignette */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      box-shadow: inset 0 0 120px rgba(30,27,25,0.06);
+    }
+
+    .card {
+      width: 100%;
+      max-width: 580px;
+      text-align: center;
+      padding: 4rem 2.5rem;
+      position: relative;
+      animation: rise 1.2s cubic-bezier(0.22,0.61,0.36,1) both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Eyebrow */
+    .eyebrow {
+      font-family: var(--serif-body);
+      font-size: 0.72rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 2.25rem;
+      font-weight: 400;
+    }
+    .eyebrow .dot {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 50%;
+      vertical-align: middle;
+      margin: 0 0.65em 0.15em;
+      transform: translateY(-1px);
+    }
+
+    /* Name — the centerpiece */
+    h1 {
+      font-family: var(--serif-display);
+      font-weight: 360;
+      font-variation-settings: 'opsz' 144, 'SOFT' 30;
+      font-size: clamp(2.6rem, 7vw, 3.8rem);
+      line-height: 1.05;
+      letter-spacing: -0.015em;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+    h1 .initial {
+      font-style: italic;
+      font-variation-settings: 'opsz' 144, 'SOFT' 80;
+      color: var(--accent);
+    }
+
+    /* Role line */
+    .role {
+      font-family: var(--serif-display);
+      font-style: italic;
+      font-weight: 380;
+      font-size: 1.1rem;
+      color: var(--ink-muted);
+      letter-spacing: 0.005em;
+      margin-bottom: 2.75rem;
+    }
+
+    /* Decorative center rule */
+    .rule {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.9rem;
+      margin: 2.25rem auto;
+      color: var(--accent);
+    }
+    .rule::before,
+    .rule::after {
+      content: '';
+      width: 50px;
+      height: 1px;
+      background: var(--rule);
+    }
+    .rule-mark {
+      font-family: var(--serif-display);
+      font-size: 0.9rem;
+      letter-spacing: 0.2em;
+      font-style: italic;
+      color: var(--accent);
+      font-weight: 400;
+    }
+
+    /* Body paragraphs */
+    p.statement {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--ink);
+      margin: 0 auto 1.5rem;
+      max-width: 460px;
+      text-wrap: pretty;
+    }
+    p.statement em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    /* Contact block */
+    .contact {
+      margin-top: 2.75rem;
+    }
+    .contact-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 0.5rem;
+    }
+    .contact a {
+      font-family: var(--serif-display);
+      font-weight: 420;
+      font-size: 1.3rem;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s ease, color 0.3s ease;
+      letter-spacing: 0.005em;
+    }
+    .contact a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 4rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      font-weight: 400;
+    }
+    footer .sep {
+      display: inline-block;
+      margin: 0 0.5em;
+      color: var(--rule);
+    }
+
+    /* Small print */
+    @media (max-width: 480px) {
+      .card { padding: 2.5rem 1rem; }
+      h1 { font-size: 2.4rem; }
+      .role { font-size: 1rem; }
+      p.statement { font-size: 1rem; }
+      .rule::before, .rule::after { width: 36px; }
+      .contact a { font-size: 1.15rem; }
+    }
+
+    /* Print-friendly */
+    @media print {
+      body::before, .card { animation: none; }
+      body { background: white; }
+    }
+
+    /* Respect reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      .card { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+
+    <div class="eyebrow">
+      Independent Inventor<span class="dot"></span>Medical Technology
+    </div>
+
+    <h1>Scott <span class="initial">R.</span> Mayer</h1>
+
+    <div class="role">Interventional cardiology · Drug delivery</div>
+
+    <div class="rule">
+      <span class="rule-mark">·  ·  ·</span>
+    </div>
+
+    <p class="statement">
+      U.S. patent filings in interventional cardiology and intracoronary drug delivery, on record with the United States Patent and Trademark Office.
+    </p>
+
+    <p class="statement">
+      Open to licensing discussions, collaborative development, and partnership inquiries from qualified pharmaceutical and medical-device companies.
+    </p>
+
+    <div class="rule" aria-hidden="true">
+      <span class="rule-mark">·  ·  ·</span>
+    </div>
+
+    <div class="contact">
+      <div class="contact-label">Direct Correspondence</div>
+      <a href="mailto:Scott@ScottRMayer.com">Scott@ScottRMayer.com</a>
+    </div>
+
+    <footer>
+      Toms River <span class="sep">·</span> New Jersey <span class="sep">·</span> MMXXVI
+    </footer>
+
+  </main>
+</body>
+</html>
