@@ -343,7 +343,7 @@
       <h2 class="reveal" style="--i:1">Let's build what the bedside has been waiting for.</h2>
       <p class="body reveal" style="--i:2">If you develop cardiovascular devices or therapeutics, there is value in an inventor who has already been in the room. Reach out about licensing, development, or partnership — or simply to start the conversation.</p>
       <a class="email reveal" style="--i:3" href="mailto:Scott@ScottRMayer.com">Scott@ScottRMayer.com</a>
-      <div class="sub reveal" style="--i:4"><a href="https://www.linkedin.com/in/scottmayer" target="_blank" rel="noopener">LinkedIn</a> &nbsp;·&nbsp; New Jersey</div>
+      <div class="sub reveal" style="--i:4"><a href="https://www.linkedin.com/in/scottmayer-nj" target="_blank" rel="noopener">LinkedIn</a> &nbsp;·&nbsp; New Jersey</div>
       <svg class="contact-ecg" viewBox="0 0 1400 140" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
         <line class="ecg-base" x1="0" y1="70" x2="1400" y2="70"/>
         <path class="ecg-trace" d="M0,70 L40,70 Q56,60 72,70 L82,70 L86,76 L92,28 L98,82 L104,70 L120,70 Q150,50 180,70 L200,70 L240,70 Q256,60 272,70 L282,70 L286,76 L292,28 L298,82 L304,70 L320,70 Q350,50 380,70 L400,70 L440,70 Q456,60 472,70 L482,70 L486,76 L492,28 L498,82 L504,70 L520,70 Q550,50 580,70 L600,70 L640,70 Q656,60 672,70 L682,70 L686,76 L692,28 L698,82 L704,70 L720,70 Q750,50 780,70 L800,70 L840,70 Q856,60 872,70 L882,70 L886,76 L892,28 L898,82 L904,70 L920,70 Q950,50 980,70 L1000,70 L1040,70 Q1056,60 1072,70 L1082,70 L1086,76 L1092,28 L1098,82 L1104,70 L1120,70 Q1150,50 1180,70 L1200,70 L1240,70 Q1256,60 1272,70 L1282,70 L1286,76 L1292,28 L1298,82 L1304,70 L1320,70 Q1350,50 1380,70 L1400,70"/>
@@ -394,33 +394,4 @@
   else{
     var ro = new IntersectionObserver(function(es){
       es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); ro.unobserve(e.target); } });
-    }, {rootMargin:'0px 0px -12% 0px', threshold:.12});
-    reveals.forEach(function(el){ ro.observe(el); });
-  }
-
-  // living seals
-  if(!reduce){ document.querySelectorAll('.seal').forEach(function(s){ s.classList.add('is-alive'); }); }
-
-  // nav condense
-  var nav = document.getElementById('nav'), ticking=false;
-  addEventListener('scroll', function(){
-    if(ticking) return; ticking=true;
-    requestAnimationFrame(function(){ nav.classList.toggle('is-condensed', scrollY>40); ticking=false; });
-  }, {passive:true});
-
-  // active nav
-  var links = [].slice.call(document.querySelectorAll('.nav-links a[data-nav]'));
-  var secs = links.map(function(a){return document.getElementById(a.dataset.nav);}).filter(Boolean);
-  var spy = new IntersectionObserver(function(es){
-    es.forEach(function(e){
-      if(!e.isIntersecting) return;
-      links.forEach(function(a){a.classList.remove('is-active');});
-      var m = links.find(function(a){return a.dataset.nav===e.target.id;});
-      if(m) m.classList.add('is-active');
-    });
-  }, {rootMargin:'-45% 0px -45% 0px', threshold:0});
-  secs.forEach(function(s){ spy.observe(s); });
-})();
-</script>
-</body>
-</html>
+    }, {rootMargin:'0px 0p
